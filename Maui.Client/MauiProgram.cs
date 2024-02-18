@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using CommunityToolkit.Maui; // To use UseMauiCommunityToolkit method.
+using CommunityToolkit.Maui;
 
 namespace Northwind.Maui.Client
 {

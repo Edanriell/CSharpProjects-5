@@ -59,7 +59,6 @@ public partial class CustomersPage : ContentPage
         if (e.Item is not CustomerDetailViewModel c)
             return;
 
-        // navigate to the detail view and show the tapped customer
         await Navigation.PushAsync(
             new CustomerDetailPage(BindingContext as CustomersListViewModel, c)
         );

@@ -1,5 +1,5 @@
-﻿using CommunityToolkit.Mvvm.Input; // To use [RelayCommand].
-using System.Collections.ObjectModel; // To use ObservableCollection<T>.
+﻿using CommunityToolkit.Mvvm.Input;
+using System.Collections.ObjectModel;
 
 namespace Northwind.Maui.Client;
 

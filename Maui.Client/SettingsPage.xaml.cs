@@ -1,5 +1,5 @@
-using Northwind.Maui.Client.Controls; // To use enum Theme.
-using Northwind.Maui.Client.Resources.Styles; // To use DarkModeTheme.
+using Northwind.Maui.Client.Controls;
+using Northwind.Maui.Client.Resources.Styles;
 
 namespace Northwind.Maui.Client;
 

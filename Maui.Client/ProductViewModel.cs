@@ -1,13 +1,9 @@
-﻿// To use ObservableObject and [ObservableProperty].
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Northwind.Maui.Client;
 
-// ObservableObject implements INotifyPropertyChanged.
 internal partial class ProductViewModel : ObservableObject
 {
-    // This attribute uses the source generator to add the public property
-    // named ProductId to the class
     [ObservableProperty]
     private int productId;
 
@@ -38,7 +34,6 @@ internal partial class ProductViewModel : ObservableObject
     [ObservableProperty]
     private bool discontinued;
 
-    // A readonly property to show information about stock.
     public string Stock
     {
         get =>

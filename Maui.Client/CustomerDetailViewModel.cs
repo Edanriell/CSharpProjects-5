@@ -1,5 +1,5 @@
-﻿using System.ComponentModel; // To use INotifyPropertyChanged.
-using System.Runtime.CompilerServices; // To use [CallerMemberName].
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Northwind.Maui.Client;
 
@@ -14,12 +14,8 @@ public class CustomerDetailViewModel : INotifyPropertyChanged
     private string country;
     private string phone;
 
-    // This attribute sets the propertyName parameter
-    // using the context in which this method is called.
     private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
     {
-        // If an event handler has been set then invoke
-        // the delegate and pass the name of the property.
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
