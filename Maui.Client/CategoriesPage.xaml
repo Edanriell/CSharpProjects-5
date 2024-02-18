@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Northwind.Maui.Client.CategoriesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Categories"
+    Background="{StaticResource Rainbow}">
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Categories"
+            VerticalOptions="Center" />
+        <Button
+            x:Name="ClickMeButton"
+            Clicked="ClickMeButton_Clicked"
+            Text="Click Me!"
+            WidthRequest="100" />
+
+        <Label Margin="10">
+            Use the slider to rotate the square:
+        </Label>
+
+        <Label
+            BindingContext="{x:Reference Name=SliderRotation}"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            Text="{Binding Path=Value, StringFormat='{0:N0} degrees'}" />
+
+        <Slider
+            x:Name="SliderRotation"
+            Margin="10,0"
+            Maximum="180"
+            Minimum="0"
+            Value="0" />
+
+        <Rectangle
+            BindingContext="{x:Reference Name=SliderRotation}"
+            Fill="{StaticResource Rainbow}"
+            HeightRequest="200"
+            Rotation="{Binding Path=Value}"
+            WidthRequest="200" />
+
+    </VerticalStackLayout>
+</ContentPage>

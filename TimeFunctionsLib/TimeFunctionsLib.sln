@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeFunctionsLib", "TimeFunctionsLib\TimeFunctionsLib.csproj", "{333E7446-9447-464C-B6C8-7F2EDDDF38E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333E7446-9447-464C-B6C8-7F2EDDDF38E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333E7446-9447-464C-B6C8-7F2EDDDF38E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333E7446-9447-464C-B6C8-7F2EDDDF38E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333E7446-9447-464C-B6C8-7F2EDDDF38E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7B9D79A-AB09-4C98-A370-E9CDE79C9AF0}
+	EndGlobalSection
+EndGlobal
